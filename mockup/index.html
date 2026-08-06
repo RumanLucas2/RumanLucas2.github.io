@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="flow.css">
-  <link rel="stylesheet" href="notify.css">
+  <link rel="stylesheet" href="main.css?v=20260806-3">
+  <link rel="stylesheet" href="contact.css?v=20260806-3">
+  <link rel="stylesheet" href="flow.css?v=20260806-3">
+  <link rel="stylesheet" href="notify.css?v=20260806-11">
 </head>
 <body>
   <div class="prototype-ribbon">PROTÓTIPO VISUAL · DADOS DEMONSTRATIVOS</div>
@@ -25,8 +25,8 @@
         <button class="nav-item" data-page="fluxo"><span>⇥</span> Fluxo comercial <b>8</b></button>
         <span class="nav-label">CADASTROS</span>
         <button class="nav-item" data-page="produtos"><span>◇</span> Produtos</button>
-        <button class="nav-item" data-page="compradores"><span>♙</span> Compradores</button>
-        <button class="nav-item" data-page="fornecedores"><span>▱</span> Fornecedores</button>
+        <button class="nav-item" data-page="compradores"><span>♙</span> Clientes</button>
+        <div class="nav-group"><button class="nav-item" data-partners-toggle aria-expanded="false"><span>▱</span> Parceiros <i class="nav-chevron" aria-hidden="true"></i></button><div class="nav-submenu" id="partnersSubmenu"><button class="nav-subitem" data-page="fornecedores">Fornecedores</button><button class="nav-subitem" data-page="transportadoras">Transportadoras</button></div></div>
         <button class="nav-item" data-page="equipe"><span>♧</span> Equipe</button>
         <button class="nav-item" data-page="pagamentos"><span>▰</span> Pagamentos</button>
       </nav>
@@ -37,7 +37,7 @@
       <header class="topbar">
         <button class="icon-button menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
         <div class="company-switcher"><small>EMPRESA ATUAL</small><button>Almeida Distribuidora <span>⌄</span></button></div>
-        <div class="top-actions"><button class="icon-button" aria-label="Pesquisar">⌕</button><div class="notification-center"><button class="icon-button notification" id="notificationButton" aria-label="Abrir notificações" aria-expanded="false">🔔<span class="notification-count" id="notificationCount"></span></button><div class="notification-panel" id="notificationPanel" hidden></div></div><div class="user"><span class="avatar">LA</span><span><strong>Lucas Almeida</strong><small>Administrador</small></span><button>⌄</button></div></div>
+        <div class="top-actions"><button class="icon-button" aria-label="Pesquisar">⌕</button><div class="notification-center"><div class="notification-buttons" id="notificationButtons" aria-label="Notificações por categoria"></div><div class="notification-panel" id="notificationPanel" hidden></div></div><div class="user-menu"><button class="user" id="userMenuButton" aria-label="Abrir menu do usuário" aria-expanded="false"><span class="avatar">LA</span><span><strong>Lucas Almeida</strong><small>Administrador</small></span><i>⌄</i></button><div class="user-dropdown" id="userDropdown" hidden><div class="user-dropdown-head"><strong>Lucas Almeida</strong><small>Almeida Distribuidora</small></div><button id="forceRefreshButton"><span>↻</span><span><strong>Forçar recarregamento</strong><small>Limpar cache e recarregar a página</small></span></button></div></div></div>
       </header>
 
       <section class="content" id="content" aria-live="polite"></section>
@@ -56,6 +56,6 @@
     </div>
   </div>
   <div class="toast" id="toast" role="status">Alteração salva no navegador</div>
-  <script src="app.js"></script>
+  <script src="app.js?v=20260806-10"></script>
 </body>
 </html>
