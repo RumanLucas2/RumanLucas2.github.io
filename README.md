@@ -2,7 +2,7 @@
 
 SaaS B2B de gestão comercial para pequenas e médias empresas, cobrindo o ciclo completo da venda: **orçamento, aprovação, pedido, faturamento, separação e envio**. O sistema também centralizará produtos, estoque, compradores, fornecedores, equipe, formas de pagamento, alertas e indicadores comerciais.
 
-> Status atual: fase de concepção. O diretório [`mockup`](./mockup) contém um protótipo visual navegável com dados demonstrativos; ele não representa a aplicação final nem possui backend persistente.
+> Status atual: fase de concepção. O diretório [`docs`](./docs) contém um protótipo visual navegável com dados demonstrativos; ele não representa a aplicação final nem possui backend persistente.
 
 ## Visão do produto
 
@@ -214,7 +214,6 @@ tests/
   NexoPedidos.Web.Tests/
 docs/
   adr/
-mockup/
 ```
 
 ### Modelo de domínio inicial
@@ -323,7 +322,7 @@ Esses itens poderão entrar no roadmap após validação comercial e análise de
 O mockup pode ser aberto diretamente no navegador:
 
 ```powershell
-Start-Process .\mockup\index.html
+Start-Process .\docs\index.html
 ```
 
 Ele usa `localStorage`, possui dados fictícios e existe apenas para validar navegação, conteúdo e aparência. Não deve ser publicado como aplicação real e não oferece autenticação, autorização, isolamento de empresas, banco de dados ou garantias de integridade.
