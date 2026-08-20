@@ -13,3 +13,7 @@
 # Arquivos de ambiente local
 appsettings.Local.json
 *.local.json
+
+# Artefatos gerados localmente
+output/
+tmp/
